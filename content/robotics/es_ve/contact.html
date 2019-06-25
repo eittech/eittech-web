@@ -45,14 +45,14 @@
                     <div class="container">
                         <div class="column one">
                             <div class="top_bar_left clearfix">
-                                
-								
+
+
 								<div class="logo" id="animation_container" style="width:133px; height:69px">
 								<canvas id="canvas" width="133" height="69" style="position: absolute; display: block; "></canvas>
 								<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:133px; height:69px; position: absolute; left: 0px; top: 0px; display: block;">
 								</div>
 								</div>
-								
+
                                 <div class="menu_wrapper">
                                     <nav id="menu">
                                         <ul id="menu-menu" class="menu menu-main">
@@ -69,7 +69,7 @@
                                             <li>
                                                 <a href="portfolio.html"><span>Portafolio</span></a>
                                             </li>
-                                           
+
                                             <li>
                                                 <a href="company.html"><span>Compañia</span></a>
                                             </li>
@@ -99,7 +99,7 @@
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix">
-                                        
+
                                                 <hr class="no_line" style="margin:0 auto 150px">
                                                 <h2> Si está interesado en aprender más sobre <strong>eittech</strong>, o cree que una asociación podría ayudar a su empresa, ¡contactenos! Nos encantaría hablar.</h2>
                                             </div>
@@ -136,13 +136,13 @@
                                                 </div>
                                             </div>
                                         </div>
-										
-										
+
+
 										<div class="column mcb-column one column_column">
                  						   <!-- Text Area -->
                  						   <aside id="text-11" class="widget widget_text">
                   						      <div class="textwidget">
-                 					           <h5 class="flv_margin_b_5"><i class="icon-email"></i>hello@eittch.net</h5>
+                 					           <h5 class="flv_margin_b_5"><i class="icon-email"></i>hello@eittech.net</h5>
                            						 </p>
                            					 <h5 class="flv_margin_b_5"><i class="icon-phone"></i>+58 412 3112308</h5>
                             </p>
@@ -170,7 +170,7 @@
                                                             <span class="num"></span><i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i>
                                                         </div>
                                                         <div class="answer">
-                                                           
+
                                                         </div>
                                                     </div>
                                                     <div class="question">
@@ -178,7 +178,7 @@
                                                             <span class="num"></span><i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i>
                                                         </div>
                                                         <div class="answer">
-                                                            
+
                                                         </div>
                                                     </div>
                                               <div class="question">
@@ -186,7 +186,7 @@
                                                             <span class="num"></span><i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i>
                                                         </div>
                                                         <div class="answer">
-                                                         
+
                                                         </div>
                                                     </div>
                                                       <div class="question">
@@ -194,7 +194,7 @@
                                                             <span class="num"></span><i class="icon-plus acc-icon-plus"></i><i class="icon-minus acc-icon-minus"></i>
                                                         </div>
                                                         <div class="answer"> -->
-                                                           
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -226,7 +226,7 @@
                                 <p>
                                     <a href="https://www.google.com/maps/place/eittech/@10.2484267,-67.5906247,15z/data=!4m5!3m4!1s0x0:0x7eeaa7b9c7a0a0ea!8m2!3d10.2484267!4d-67.5906247" target="_blank"><i class="icon-gplus"></i></a>
 									<a href="https://www.linkedin.com/company/eittech" target="_blank"><i class="icon-linkedin"></i></a>
-						
+
                                 </p>
                             </div>
                         </aside>
@@ -237,7 +237,7 @@
                             <a href="http://develop.imago.web.ve/eittech/develop1/html/content/robotics/products.html">
                                     <h4>Productos</h4>
                             </a>
-                            
+
                             <div class="textwidget custom-html-widget">
                                 <ul>
                                   <li>
@@ -263,18 +263,18 @@
                                         <li>
                                             <i class="themecolor icon-right-open-mini"></i> Consultoría
                                         </li>
-                                    
+
                                         <li>
                                             <i class="themecolor icon-right-open-mini"></i> Diseño Web
                                         </li>
-                                    
+
                                         <li>
                                             <i class="themecolor icon-right-open-mini"></i> E-Commerce
                                         </li>
-                                   
+
                                         <li>
                                             <i class="themecolor icon-right-open-mini"></i> Marketing Web
-                                        </li> 
+                                        </li>
                                 </ul>
                             </div>
                         </aside>
@@ -323,50 +323,50 @@ function handleComplete(evt,comp) {
 	var lib=comp.getLibrary();
 	var ss=comp.getSpriteSheet();
 	exportRoot = new lib.eittech_414x69();
-	stage = new lib.Stage(canvas);	
+	stage = new lib.Stage(canvas);
 	//Registers the "tick" event listener.
 	fnStartAnimation = function() {
 		stage.addChild(exportRoot);
 		createjs.Ticker.setFPS(lib.properties.fps);
 		createjs.Ticker.addEventListener("tick", stage);
-	}	    
+	}
 	//Code to support hidpi screens and responsive scaling.
-	function makeResponsive(isResp, respDim, isScale, scaleType) {		
-		var lastW, lastH, lastS=1;		
-		window.addEventListener('resize', resizeCanvas);		
-		resizeCanvas();		
-		function resizeCanvas() {			
-			var w = lib.properties.width, h = lib.properties.height;			
-			var iw = window.innerWidth, ih=window.innerHeight;			
-			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
-			if(isResp) {                
-				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
-					sRatio = lastS;                
-				}				
-				else if(!isScale) {					
-					if(iw<w || ih<h)						
-						sRatio = Math.min(xRatio, yRatio);				
-				}				
-				else if(scaleType==1) {					
-					sRatio = Math.min(xRatio, yRatio);				
-				}				
-				else if(scaleType==2) {					
-					sRatio = Math.max(xRatio, yRatio);				
-				}			
-			}			
-			canvas.width = w*pRatio*sRatio;			
+	function makeResponsive(isResp, respDim, isScale, scaleType) {
+		var lastW, lastH, lastS=1;
+		window.addEventListener('resize', resizeCanvas);
+		resizeCanvas();
+		function resizeCanvas() {
+			var w = lib.properties.width, h = lib.properties.height;
+			var iw = window.innerWidth, ih=window.innerHeight;
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
+			if(isResp) {
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {
+					sRatio = lastS;
+				}
+				else if(!isScale) {
+					if(iw<w || ih<h)
+						sRatio = Math.min(xRatio, yRatio);
+				}
+				else if(scaleType==1) {
+					sRatio = Math.min(xRatio, yRatio);
+				}
+				else if(scaleType==2) {
+					sRatio = Math.max(xRatio, yRatio);
+				}
+			}
+			canvas.width = w*pRatio*sRatio;
 			canvas.height = h*pRatio*sRatio;
-			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';
 			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
-			stage.scaleX = pRatio*sRatio;			
-			stage.scaleY = pRatio*sRatio;			
-			lastW = iw; lastH = ih; lastS = sRatio;            
-			stage.tickOnUpdate = false;            
-			stage.update();            
-			stage.tickOnUpdate = true;		
+			stage.scaleX = pRatio*sRatio;
+			stage.scaleY = pRatio*sRatio;
+			lastW = iw; lastH = ih; lastS = sRatio;
+			stage.tickOnUpdate = false;
+			stage.update();
+			stage.tickOnUpdate = true;
 		}
 	}
-	makeResponsive(false,'both',false,1);	
+	makeResponsive(false,'both',false,1);
 	AdobeAn.compositionLoaded(lib.properties.id);
 	fnStartAnimation();
 }
