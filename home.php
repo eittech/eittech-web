@@ -120,8 +120,7 @@
                                     <div class="tp-caption sfl tp-resizeme" id="slide-1-layer-1" data-x="199" data-y="center" data-voffset="-170" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on"
                                         data-start="500" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 300; color: #fff; letter-spacing: 0px;font-family:Nunito Sans;">
                                         Optimiza tu trabajo y alcanza más clientes<br> 
-										implementando soluciones tecnológicas,<br> 
-										sin importar el tipo de organización tengas.
+										implementando soluciones tecnológicas.
                                     </div>
                                     <div class="tp-caption rev-btn tp-resizeme" id="slide-1-layer-7" data-x="200" data-y="center" data-voffset="53" data-width="['auto']" data-height="['auto']" data-type="" data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"service.html","delay":""}]'
                                         data-responsive_offset="on" data-frames='[{"delay":40,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
@@ -315,7 +314,7 @@
                                         <div class="column mcb-column five-sixth column_column  column-margin-20px">
                                             <div class="column_attr clearfix" style="">
                                                 <hr class="no_line" style="margin:0 auto 30px">
-                                                <h5>Te integramos a plataformas de Comercio Electrónico sin importar el tipo de organización tengas. Para colocar tus productos y/o servicios al alcance de todos desde cualquier lugar, a cualquier hora, los 365 días de año. Aumentando tus ventas y la satisfacción de tus clientes. </h5>
+                                                <h5>Te integramos a plataformas de Comercio Electrónico sin importar el tipo de organización que tengas. Para colocar tus productos y/o servicios al alcance de todos desde cualquier lugar, a cualquier hora, los 365 días de año. Aumentando tus ventas y la satisfacción de tus clientes. </h5>
                                                
                                             </div>
                                         </div>
