@@ -74,31 +74,14 @@
 								</div>
                                 <div class="menu_wrapper">
                                     <nav id="menu">
-                                        <ul id="menu-menu" class="menu menu-main">
-                                            <li class="current-menu-item" >
-                                                 <a class="li" id="index" href="index.php"><span>Inicio</span></a>
-                                            </li>
-                                            <li >
-                                                <!--<a class="li" id="products" href="#"><span>Productos</span></a>-->
-                                            </li>
-                                            <li >
-                                                <a class="li" id="service" href="#"><span>Servicios</span></a>
-                                            </li>
+                                    <!-- Inclusión del menú -->
+									<?php 
+									if($config['config']['menu']['active'] == 1){
+									  
+										include "menu.php";
 
-                                            <li >
-                                                <a class="li" id="portfolio" href="#"><span>Portafolio</span></a>
-                                            </li>
-                                           
-                                            <li >
-                                                <a class="li" id="company" href="#"><span>Compañia</span></a>
-                                            </li>
-                                            <li >
-                                                <a class="li" id="contact" href="#"><span>Contacto &#038; Soporte</span></a>
-                                            </li>
-                                            <li>
-                       							<!--<a target="_blank" href="#"><span><span style="text-decoration:underline;">Registrarse</span></span></a>-->
-                                            </li>
-                                        </ul>
+									} 
+									?>
                                     </nav>
                                     <a class="responsive-menu-toggle " href="#"><i class="icon-menu-fine"></i></a>
                                 </div>
@@ -307,7 +290,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section mcb-section equal-height-wrap bg-contain" style="padding-top:50px; padding-bottom:100px; background-color:; background-image:url(content/robotics/images/robotics-home-dotsbg.png); background-repeat:no-repeat; background-position:center">
+                        <div class="section mcb-section equal-height-wrap bg-contain" style="padding-top:50px; padding-bottom:100px; background-color:; background-image:url(images/robotics-home-dotsbg.png); background-repeat:no-repeat; background-position:center">
                             <div class="section_wrapper mcb-section-inner">
                                 <div class="wrap mcb-wrap one-second valign-middle clearfix">
                                     <div class="mcb-wrap-inner">
@@ -386,19 +369,21 @@
         </div>
         
         <!-- Datos de ubicación del visitante -->
-		<input id="lat" type="hidden" value="<?php echo $user_localization['geoplugin_latitude']; ?>">
+		<!--<input id="lat" type="hidden" value="<?php //echo $user_localization['geoplugin_latitude']; ?>">-->
 
-		<input id="lng" type="hidden" value="<?php echo $user_localization['geoplugin_longitude']; ?>">
+		<!--<input id="lng" type="hidden" value="<?php //echo $user_localization['geoplugin_longitude']; ?>">-->
 
-		<input id="city" type="hidden" value="<?php echo $user_localization['geoplugin_city']; ?>">
+		<!--<input id="city" type="hidden" value="<?php //echo $user_localization['geoplugin_city']; ?>">-->
 
-		<input id="region" type="hidden" value="<?php echo $user_localization['geoplugin_region']; ?>">
+		<!--<input id="region" type="hidden" value="<?php //echo $user_localization['geoplugin_region']; ?>">-->
 
-		<input id="countryName" type="hidden" value="<?php echo $user_localization['geoplugin_countryName']; ?>">
+		<!--<input id="countryName" type="hidden" value="<?php //echo $user_localization['geoplugin_countryName']; ?>">-->
 
-		<input id="countryCode" type="hidden" value="<?php echo $user_localization['geoplugin_countryCode']; ?>">
+		<!--<input id="countryCode" type="hidden" value="<?php //echo $user_localization['geoplugin_countryCode']; ?>">-->
 
-		<input id="continentCode" type="hidden" value="<?php echo $user_localization['geoplugin_continentCode']; ?>">
+		<!--<input id="continentCode" type="hidden" value="<?php //echo $user_localization['geoplugin_continentCode']; ?>">-->
+
+		<input id="idiom" type="hidden" value="<?php echo $idiom; ?>">
         
         <footer id="Footer" class="clearfix">
             <div class="widgets_wrapper" style="padding:120px 0 80px">
@@ -511,40 +496,16 @@
 
 	<script>
 		
-		// Código para validar la carga de las páginas según la ubicación geográfica del visitante
         $(document).ready(function() {
 			
-			$(".li").on('click', function(){
+			// Código para validar la carga de las páginas según el idioma seleccionado por el visitante
+			//~ $(".li").on('click', function(){
 				
-				var url_id = this.getAttribute('id');
+				//~ var url_id = this.getAttribute('id');
 				
-				if ($("#countryCode").val().trim() == "") {
+				//~ window.location.href = url_id + '.php' + $("#idiom").val().trim();
 				
-					window.location.href = url_id + '.html';
-					
-				} else if($("#countryCode").val().trim() == "US"){
-					
-					window.location.href = url_id + '.html';
-					  
-				} else if($("#countryCode").val().trim() == "FR"){
-					
-					window.location.href = url_id + '.html';
-					  
-				} else if($("#countryCode").val().trim() == "BR"){
-					
-					window.location.href = url_id + '.html';
-					  
-				} else if($("#countryCode").val().trim() == "VE"){
-					
-					window.location.href = url_id + '.html';
-					  
-				} else {
-				
-					window.location.href = url_id + '.html';
-				
-				}
-				
-			});			
+			//~ });			
 			  
 		});
 		
