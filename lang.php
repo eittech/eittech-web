@@ -9,6 +9,7 @@ if(isset($_GET['lang'])){
 		include "lang/".$_GET['lang']."/menu.php";
 		include "lang/".$_GET['lang']."/language.php";
 		include "lang/".$_GET['lang']."/home.php";
+		include "lang/".$_GET['lang']."/service.php";
 		include "lang/".$_GET['lang']."/footer.php";
 		
 	}else{
@@ -18,6 +19,7 @@ if(isset($_GET['lang'])){
 		include "lang/en/menu.php";
 		include "lang/en/language.php";
 		include "lang/en/home.php";
+		include "lang/en/service.php";
 		include "lang/en/footer.php";
 		
 	}
@@ -29,6 +31,7 @@ if(isset($_GET['lang'])){
 	include "lang/en/menu.php";
 	include "lang/en/language.php";
 	include "lang/en/home.php";
+	include "lang/en/service.php";
 	include "lang/en/footer.php";
 	
 }

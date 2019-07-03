@@ -20,7 +20,7 @@ include "config.php";
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Servicio</title>
+    <title><?php echo $lang['service']['title']; ?></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -91,12 +91,11 @@ include "config.php";
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix animate" data-anim-type="fadeInLeft">
-                                                <h2>Creemos que, si se hace bien, la tecnología simplifica.<br>
-												Pero lo simple puede ser complicado. Por eso estamos aquí.</h2>
+                                                <h2><?php echo $lang['service']['title_header']; ?></h2>
                                                 <hr class="no_line" style="margin:0 auto 150px">
                                                 <h3> 
 													
-													Proporcionamos soluciones tecnológicas preparadas por un equipo de creativos e ingenieros,<br> que hacen el trabajo más fácil para nuestros clientes y sus clientes.
+													<?php echo $lang['service']['subtitle_header']; ?>
 												
 											   </h3>
                                             </div>
@@ -136,7 +135,7 @@ include "config.php";
                                         <!-- One Fourth (1/4) Column -->
                                         <div class="column one-fourth column_column">
                                             <div class="column_attr ">
-                                                <h6 class="flv_margin_b_5">Consultoria</h6>
+                                                <h6 class="flv_margin_b_5"><?php echo $lang['service']['group_title']; ?></h6>
                                             </div>
                                         </div>
                                         <!-- Three Fourth (3/4) Column -->
@@ -144,25 +143,30 @@ include "config.php";
                                             <div class="column_attr ">
                                                 <br><br><br>
 												<p>
-                                                    <span>En el mundo existen miles de herramientas tecnologías y servicios tecnológicos con bajos costos de implementación y/o desarrollo, que mejoran la productividad de las organizaciones. Te guiamos a través de los giros y vueltas que conforma tu panorama digital; para la la selección, adaptación, desarrollo e implementación de soluciones tecnológicas. Nuestros servicios incluyen:</span>
+                                                    <span><?php echo $lang['service']['group_text']; ?></span>
                                                 </p>
                                                 <div class="hr_dots flv_style_5">
                                                     <span></span><span></span><span></span>
                                                 </div>
                                                 <!-- One Second (1/2) Column -->
                                                 <div class="column one-second">
-                                                    <h5>Tecnología</h5>
+                                                    <h5><?php echo $lang['service']['group_column1_title']; ?></h5>
                                                     <ul class="list_mixed">
                                                         <li class="list_star">
-                                                         Diseño y desarrollo de sitios web.                                                        </li>
+                                                         <?php echo $lang['service']['group_column1_text1']; ?>
+                                                        </li>
                                                         <li class="list_star">
-                                                                Arquitectura de software                                                        </li>
+                                                         <?php echo $lang['service']['group_column1_text2']; ?>
+                                                        </li>
                                                         <li class="list_star">
-                                                                Desarrollo de software                                                        </li>
+                                                         <?php echo $lang['service']['group_column1_text3']; ?>
+                                                        </li>
                                                         <li class="list_star">
-                                                                Comercio electrónico y pedidos en línea.                                                        </li>
+                                                         <?php echo $lang['service']['group_column1_text4']; ?>
+                                                        </li>
                                                         <li class="list_star">
-                                                                Integración de sistemas y servicios API                                                        </li>
+                                                         <?php echo $lang['service']['group_column1_text5']; ?>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                                 <!-- One Second (1/2) Column -->
@@ -171,12 +175,10 @@ include "config.php";
                                                     <h5>   </h5>
                                                     <ul class="list_mixed">
                                                         <li class="list_star">
-                                                                Evaluación de plataformas.                                                 
-                                                                   </li>
+                                                          <?php echo $lang['service']['group_column2_text1']; ?>                                                 
+                                                        </li>
                                                         <li class="list_star">
-                                                                Pruebas de software.                                                      
-                                                              </li>
-
+                                                          <?php echo $lang['service']['group_column2_text1']; ?>                                                     
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -188,37 +190,39 @@ include "config.php";
                                                        
                                                         <!-- One Second (1/2) Column -->
                                                         <div class="column one-second">
-                                                            <h5>Diseño</h5>
+                                                            <h5><?php echo $lang['service']['group_column3_title']; ?></h5>
                                                             <ul class="list_mixed">
                                                                 <li class="list_star">
-                                                                        Diseño de imágenes corporativas.                                                        </li>
+                                                                 <?php echo $lang['service']['group_column3_text1']; ?>
+                                                                </li>
                                                                 <li class="list_star">
-                                                                        Diseño de campaña
-                                                                     <li class="list_star">
-                                                                       Gestión de marca digital                
-                                                                   </li>
+                                                                 <?php echo $lang['service']['group_column3_text2']; ?>
+                                                                </li>
                                                                 <li class="list_star">
-                                                                        Desarrollo de la interfaz de usuario
-                                                               </li>
+                                                                 <?php echo $lang['service']['group_column3_text3']; ?>                
+                                                                </li>
                                                                 <li class="list_star">
-                                                                        Diseño de producto                                                       </li>
+                                                                 <?php echo $lang['service']['group_column3_text4']; ?>
+                                                                </li>
+                                                                <li class="list_star">
+                                                                 <?php echo $lang['service']['group_column3_text5']; ?>
+                                                                </li>
                                                             </ul>
                                                         </div>
                                                         <!-- One Second (1/2) Column -->
                                                         <div class="column one-second">
                                                             
-                                                            <h5> Marketing Digital  </h5>
+                                                            <h5> <?php echo $lang['service']['group_column4_title']; ?>  </h5>
                                                             <ul class="list_mixed">
                                                                 <li class="list_star">
-                                                                        Estrategia de contenido                                                 
-                                                                           </li>
+                                                                 <?php echo $lang['service']['group_column4_text1']; ?>                                                 
+                                                                </li>
                                                                 <li class="list_star">
-                                                                        Campañas y estrategia de ejecución.                                                      
-                                                                      </li>
-    
-                                                                      <li class="list_star">
-                                                                            Community Manager                                                      
-                                                                          </li>
+                                                                 <?php echo $lang['service']['group_column4_text2']; ?>
+                                                                </li>
+                                                                <li class="list_star">
+                                                                 <?php echo $lang['service']['group_column4_text3']; ?>                                                      
+                                                                </li>
                                                                 </li>
                                                             </ul>
                                                         </div>
@@ -264,10 +268,7 @@ include "config.php";
                                                 <br>
                                     
                                                 <h3>
-                                                     Fomentamos el uso metodologías ágiles, con entregas rápidas, donde nuestro equipo se integra con tu organización para comprender las necesidades reales, 
-                                                     formando una asociación que auna esfuerzos para crear soluciones tecnológicas que agilizan el trabajo de tu organización, automatizan tareas rutinarias y aportan bienestar a tu equipo y tus clientes.
-                                                         
-                                                   
+                                                  <?php echo $lang['service']['wrap1_text']; ?>
                                                 </h3>
                                                
                                             </div>
@@ -286,7 +287,7 @@ include "config.php";
                                                     <img src="images/adopcion.png" class="scale-with-grid">
                                                 </div>
                                                 <div class="desc_wrapper">
-                                                    <h4 class="title">Mayor adopción</h4>
+                                                    <h4 class="title"><?php echo $lang['service']['icon_box1_text']; ?></h4>
                                                     <div class="desc">
                                                         
                                                     </div>
@@ -299,7 +300,7 @@ include "config.php";
                                                     <img src="images/participacion.png" class="scale-with-grid">
                                                 </div>
                                                 <div class="desc_wrapper">
-                                                    <h4 class="title">Participación más activa de los usuarios</h4>
+                                                    <h4 class="title"><?php echo $lang['service']['icon_box2_text']; ?></h4>
                                                     <div class="desc">
                                                      
                                                     </div>
@@ -312,7 +313,7 @@ include "config.php";
                                                     <img src="images/satisfaccion.png" class="scale-with-grid">
                                                 </div>
                                                 <div class="desc_wrapper">
-                                                    <h4 class="title">Satisfacción de los clientes</h4>
+                                                    <h4 class="title"><?php echo $lang['service']['icon_box3_text']; ?></h4>
                                                     <div class="desc">
                                                     
                                                     </div>
