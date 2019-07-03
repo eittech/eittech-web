@@ -8,6 +8,7 @@ if(isset($_GET['lang'])){
 		
 		include "lang/".$_GET['lang']."/menu.php";
 		include "lang/".$_GET['lang']."/language.php";
+		include "lang/".$_GET['lang']."/home.php";
 		
 	}else{
 		
@@ -15,6 +16,7 @@ if(isset($_GET['lang'])){
 		
 		include "lang/en/menu.php";
 		include "lang/en/language.php";
+		include "lang/en/home.php";
 		
 	}
 	
@@ -24,6 +26,7 @@ if(isset($_GET['lang'])){
 	
 	include "lang/en/menu.php";
 	include "lang/en/language.php";
+	include "lang/en/home.php";
 	
 }
 ?>
