@@ -1,3 +1,12 @@
+<?php
+
+// Cargamos el archivo de fijación de idioma
+include "lang.php";
+
+// Cargamos archivo de configuraciones globales
+include "config.php";
+
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7 "> <![endif]-->
 <!--[if IE 7]><html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
@@ -55,33 +64,14 @@
 								
                                 <div class="menu_wrapper">
                                     <nav id="menu">
-                                        <ul id="menu-menu" class="menu menu-main">
-                                           
-                                            <li class="current-menu-item">
-                                              <a href="index.php"><span>Inicio</span></a>
-                                            </li>
-                                            <li class="current-menu-item">
-                                                 <!--<a href="content/robotics/products.html"><span>Productos</span></a>-->
-                                            </li>
-                                             <li>
-                                                <a href="service.html"><span>Servicios</span></a>
-                                            </li>
+                                    <!-- Inclusión del menú -->
+									<?php 
+									if($config['config']['menu']['active'] == 1){
+									  
+										include "menu.php";
 
-                                            <li>
-                                                <a href="portfolio.html"><span>Portafolio</span></a>
-                                            </li>
-                                           
-                                            <li>
-                                                <a href="company.html"><span>Compañia</span></a>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html"><span>Contacto &#038; Soporte </span></a>
-                                            </li>
-
-                                            <li>
-                      							<!--<a target="_blank" href="http://bit.ly/1M6lijQ"><span><span style="text-decoration:underline">Registrarse</span></span></a>-->
-                                            </li>
-                                        </ul>
+									} 
+									?>
                                     </nav>
                                     <a class="responsive-menu-toggle" href="#"><i class="icon-menu-fine"></i></a>
                                 </div>
@@ -371,6 +361,9 @@
                 </div>
             </div>
         </div>
+        
+        <input id="lang" type="hidden" value="<?php echo $idiom; ?>">
+        
         <footer id="Footer" class="clearfix">
             <div class="widgets_wrapper" style="padding:120px 0 80px">
                 <div class="container">
