@@ -11,7 +11,7 @@
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>eittech</title>
+    <title><?php echo $lang['home']['title']; ?></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -102,13 +102,12 @@
                                     </div>
                                     <div class="tp-caption sfl tp-resizeme" id="slide-1-layer-1" data-x="199" data-y="center" data-voffset="-170" data-width="['auto']" data-height="['auto']" data-type="text" data-responsive_offset="on"
                                         data-start="500" data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 6; white-space: nowrap; font-size: 40px; line-height: 50px; font-weight: 300; color: #fff; letter-spacing: 0px;font-family:Nunito Sans;">
-                                        Optimiza tu trabajo y alcanza más clientes<br> 
-										implementando soluciones tecnológicas.
+                                        <?php echo $lang['home']['title_header']; ?>
                                     </div>
-                                    <div class="tp-caption rev-btn tp-resizeme" id="slide-1-layer-7" data-x="200" data-y="center" data-voffset="53" data-width="['auto']" data-height="['auto']" data-type="" data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"service.html","delay":""}]'
+                                    <div class="tp-caption rev-btn tp-resizeme" id="slide-1-layer-7" data-x="200" data-y="center" data-voffset="53" data-width="['auto']" data-height="['auto']" data-type="" data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"service.php<?php echo $idiom; ?>","delay":""}]'
                                         data-responsive_offset="on" data-frames='[{"delay":40,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(0,0,0,1);bg:rgba(255,255,255,1);bs:solid;bw:0 0 0 0;"}]'
                                         data-textAlign="['inherit','inherit','inherit','inherit']" data-paddingtop="[15,15,15,15]" data-paddingright="[35,35,35,35]" data-paddingbottom="[15,15,15,15]" data-paddingleft="[35,35,35,35]" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 26px; font-weight: 400; color: rgba(255,255,255,1); letter-spacing: px;font-family:Roboto;background-color:#4A3B80;border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">
-                                        Saber mas…
+                                        <?php echo $lang['home']['link_header']; ?>
                                     </div>
                                 </li>
                             </ul>
@@ -134,9 +133,9 @@
                                         </div>
                                         <div class="column mcb-column one column_column ">
                                             <div class="column_attr clearfix align_center">
-                                                <h5>Optimización</h5>
+                                                <h5><?php echo $lang['home']['wrap1_title']; ?></h5>
 													<p>
-                                                    Aumenta tus ingresos y disminuye tus Costos.
+                                                    <?php echo $lang['home']['wrap1_text']; ?>
 													</p>
                                             </div>
                                         </div>
@@ -153,9 +152,9 @@
                                         </div>
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix align_center">
-                                                <h5 style="color:#fff">Automatización</h5>
+                                                <h5 style="color:#fff"><?php echo $lang['home']['wrap2_title']; ?></h5>
 													<p style="color:#d8dcdf">
-                                                    Ahorra tiempo y dinero trabajando de forma más eficiente.           </p>
+                                                    <?php echo $lang['home']['wrap2_text']; ?>           </p>
                                             </div>
                                         </div>
                                     </div>
@@ -165,7 +164,7 @@
                                         <div class="column mcb-column one column_column column-margin-0px">
                                             <div class="column_attr clearfix align_center mobile_align_center" style=" background-color:#4A3B80; padding:36px 0 0 0 ;">
                                                 <hr class="no_line" style="margin:0 auto 40px">
-                                                <h5 style="color:#fff">Encuéntrenos aquí</h5>
+                                                <h5 style="color:#fff"><?php echo $lang['home']['wrap3_title']; ?></h5>
                                                 <p>
 													<a style="color:#fff;margin-right:5px; font-size:18px" href="https://www.google.com/maps/place/eittech/@10.2483845,-67.5928161,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0x7eeaa7b9c7a0a0ea!8m2!3d10.2483845!4d-67.5906274?hl" target="_blank"><i class="icon-gplus"></i></a>
 													<a style="color:#fff; margin-right:5px;font-size:18px" href="https://www.linkedin.com/company/eittech" target="_blank"><i class="icon-linkedin"></i></a>
@@ -176,9 +175,10 @@
                                         <div class="column mcb-column one column_column ">
                                             <div class="column_attr clearfix align_center bg-cover" style=" background-color:#46525e; background-image:url('images/index/robotics-home-box.png'); background-repeat:no-repeat; background-position:center top; padding:0 12%;">
                                                 <hr class="no_line" style="margin:0 auto 250px">
-                                                <h5 style="color:#fff;">Análisis en Tiempo Real</h5>
+                                                <h5 style="color:#fff;"><?php echo $lang['home']['wrap4_title']; ?></h5>
                                                 <p style="color:#d8dcdf">
-                                                    Agiliza la toma de decisiones teniendo toda la información a un clic de distancia.                                                </p>
+                                                    <?php echo $lang['home']['wrap4_text']; ?>
+                                                </p>
                                                 <hr class="no_line" style="margin:0 auto 40px">
                                             </div>
                                         </div>
@@ -205,11 +205,11 @@
                                             <div class="column_attr clearfix" style="">
                                                 <hr class="no_line" style="margin: 0 auto 30px;">
 
-                                                <h4>Trabajamos para implementar soluciones tecnológicas que agilizan el trabajo de tu organización, automatizan tareas rutinarias y permiten colaborar con miembros de tu equipo, clientes, proveedores y socios.	 </h4>
+                                                <h4><?php echo $lang['home']['wrap5_text']; ?></h4>
                                             </div>
                                         </div>
                                         <div class="column mcb-column one column_button">
-                                            <a class="button  button_size_2 button_js" href="service.html" style=" background-color:#524596 !important; color:#ffffff;"><span class="button_label">Saber mas...</span></a>
+                                            <a class="button  button_size_2 button_js" href="service.php<?php echo $idiom; ?>" style=" background-color:#524596 !important; color:#ffffff;"><span class="button_label">Saber mas...</span></a>
                                         </div>
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix">
@@ -235,9 +235,9 @@
                                                     </div>
                                                 </div>
                                                 <hr class="no_line" style="margin:0 auto 30px">
-                                                <h5>Seguridad</h5>
+                                                <h5><?php echo $lang['home']['wrap6_column1_title']; ?></h5>
                                                 <p>
-                                                      Trabajamos día a día para asegurarnos de cumplir y superar tus exigencias y expectativas en materia de seguridad, para proteger tu organización.
+                                                      <?php echo $lang['home']['wrap6_column1_text']; ?>
                                                 </p>
                                                 <hr class="no_line" style="margin: 0 auto 40px">
                                             </div>
@@ -252,8 +252,8 @@
                                                     </div>
                                                 </div>
                                                 <hr class="no_line" style="margin:0 auto 33px">
-                                                <h5>Interacción</h5>
-                                                <p>Facilitamos herramientas para trabajar de forma colaborativa desde cualquier lugar. </p>
+                                                <h5><?php echo $lang['home']['wrap6_column2_title']; ?></h5>
+                                                <p><?php echo $lang['home']['wrap6_column2_text']; ?> </p>
                                                 <hr class="no_line" style="margin:0 auto 30px">
                                             </div>
                                         </div>
@@ -266,8 +266,8 @@
                                                     </div>
                                                 </div>
                                                 <hr class="no_line" style="margin: 0 auto 33px">
-                                                <h5>Búsqueda</h5>
-                                                <p>  Nuestros sistemas proporcionan que todos puedan acceder, según su nivel de acceso, a los datos de tu organización.</p>
+                                                <h5><?php echo $lang['home']['wrap6_column3_title']; ?></h5>
+                                                <p>  <?php echo $lang['home']['wrap6_column3_text']; ?></p>
                                                 <hr class="no_line" style="margin: 0 auto 40px">
                                             </div>
                                         </div>
@@ -280,8 +280,8 @@
                                                     </div>
                                                 </div>
                                                 <hr class="no_line" style="margin: 0 auto 36px">
-                                                <h5>Integración & API</h5>
-                                                <p> Nuestros soluciones interactúan con otras herramientas y servicios que usas a diario, para ejecutar tareas en un solo lugar.</p>
+                                                <h5><?php echo $lang['home']['wrap6_column4_title']; ?></h5>
+                                                <p> <?php echo $lang['home']['wrap6_column4_text']; ?></p>
                                                 <hr class="no_line" style="margin: 0 auto 40px">
                                             </div>
                                         </div>
@@ -297,12 +297,12 @@
                                         <div class="column mcb-column five-sixth column_column  column-margin-20px">
                                             <div class="column_attr clearfix" style="">
                                                 <hr class="no_line" style="margin:0 auto 30px">
-                                                <h5>Te integramos a plataformas de Comercio Electrónico sin importar el tipo de organización que tengas. Para colocar tus productos y/o servicios al alcance de todos desde cualquier lugar, a cualquier hora, los 365 días de año. Aumentando tus ventas y la satisfacción de tus clientes. </h5>
+                                                <h5><?php echo $lang['home']['wrap7_text']; ?> </h5>
                                                
                                             </div>
                                         </div>
                                         <div class="column mcb-column five-sixth column_button">
-                                            <a class="button  button_size_2 button_js" href="service.html" style=" background-color:#524596 !important; color:#fff"><span class="button_label">Saber mas...</span></a>
+                                            <a class="button  button_size_2 button_js" href="service.php<?php echo $idiom; ?>" style=" background-color:#524596 !important; color:#fff"><span class="button_label"><?php echo $lang['home']['wrap7_link']; ?></span></a>
                                         </div>
                                     </div>
                                 </div>
@@ -355,7 +355,7 @@
                                         </div>
                                         <div class="column mcb-column five-sixth column_column  column-margin-0px">
                                             <div class="column_attr clearfix align_left mobile_align_center" style=" padding:20px 0 20px 0;">
-                                                <h5><a class="themecolor" href="portfolio.html">Vea la lista completa de nuestros Trabajos</a></h5>
+                                                <h5><a class="themecolor" href="portfolio.php<?php echo $idiom; ?>"><?php echo $lang['home']['wrap8_link']; ?></a></h5>
                                             </div>
                                         </div>
                                     </div>
