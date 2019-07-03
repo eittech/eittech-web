@@ -4,8 +4,7 @@
 			<div style="width: 98% !important;margin: 0 1% 0px !important;">
 				<aside class="widget_text widget widget_custom_html">
 					<div class="textwidget custom-html-widget">
-						<h4>Transformamos la forma de trabajar de
-							<br> empresas en todo el mundo.</h4>
+						<h4><?php echo $lang['footer']['textwidget']; ?></h4>
 						<hr class="no_line" style="margin:0 auto 40px">
 						<div class="image_frame image_item no_link scale-with-grid alignnone no_border">
 							<div class="image_wrapper">
