@@ -20,7 +20,7 @@ include "config.php";
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Compañia</title>
+    <title><?php echo $lang['company']['title']; ?></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -90,14 +90,10 @@ include "config.php";
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix animate" data-anim-type="fadeInLeft">
-                                                <h1><strong>eittech</strong> es<br> 
-													una empresa consultora<br> 
-                                                    especializada en <br>
-													transformación digital.
-                                                    </h1>
+                                                <h1><?php echo $lang['company']['title_header']; ?></h1>
                                                 <hr class="no_line" style="margin:0 auto 150px">
                                                 <p>
-                                                   Combinamos lo mejor de las tecnologías de la información <br>y del marketing para ayudar a nuestros clientes <br> a enfrentar sus desafíos comerciales más difíciles.
+                                                   <?php echo $lang['company']['subtitle_header']; ?>
                                                 </p>
                                             </div>
                                         </div>
@@ -127,7 +123,7 @@ include "config.php";
                                                         <br>
                                                         
                                                         <p>
-                                                            <span class="big">Estamos construyendo plataformas y productos en los que creemos; con la certeza de que tiene un gran valor ayudar a los demás, estén donde estén, simplificando lo que sea que hagan y haciendo sus productos más visibles.</span>
+                                                            <span class="big"><?php echo $lang['company']['item_group1_text']; ?></span>
                                                         
                                                     </div>
                                                 </div>
@@ -215,8 +211,9 @@ include "config.php";
                                                                 <br>
                 
                                                                 <div style="text-align:justify" class="google_font flv_style_59">
-                                                                    <h3> Los clientes son la razón por la que existimos, estamos en el negocio para servirles. Nunca es fácil guiarlos a hacer lo acertado pero nos esforzamos en proporcionar las soluciones tecnológicas adecuadas para ello, incluso cuando lo que es correcto no es lo que es popular. </h3><h3>  En <strong>eittech</strong>, estamos formando un equipo fuerte y diverso de personas curiosas y creativas que quieren darle sentido a su trabajo y ayudar a los demás al mismo tiempo. Nuestro propósito es hacer que la vida sea un poco mejor, para nuestros equipo esto significa crear un entorno donde las personas se sientan valoradas y apoyadas, para nuestros clientes esto significa guiarlos a través de los giros y vueltas que conforman su panorama digital. </h3>        
-																	<h3> Buscamos desafíos que nos ayuden a crecer individualmente y en conjunto, nos empujamos a nosotros mismos y a nuestro equipos a seguir avanzando:</h3> 
+                                                                    <h3> <?php echo $lang['company']['item_group2_p1_text']; ?> </h3>
+                                                                    <h3>  <?php echo $lang['company']['item_group2_p2_text']; ?> </h3>        
+																	<h3> <?php echo $lang['company']['item_group2_p3_text']; ?></h3> 
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -233,9 +230,7 @@ include "config.php";
                                                         <br>
                                                         <p class="flv_style_8">
                                                             <br>
-                                                            <h2> El resultado es que creamos un lugar en el que se realizan  
-                                                            <br> muchos tipos de trabajos — y se realizan bien —, todo mientras
-                                                            <br>  colaboramos con personas a las que respetamos y admiramos.</h2>
+                                                            <h2> <?php echo $lang['company']['item_group3_text']; ?></h2>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -256,10 +251,10 @@ include "config.php";
                                                         <div class="number" data-to="5">
                                                             0
                                                         </div>
-                                                        <h3 class="title"> Paises</h3>
+                                                        <h3 class="title"> <?php echo $lang['company']['item_group4_title1_text']; ?></h3>
                                                         <hr class="hr_narrow" />
                                                         <div class="desc">
-                                                            Angola, Brasil, Chile, Estados Unidos y Venezuela
+                                                            <?php echo $lang['company']['item_group4_desc1_text']; ?>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -270,7 +265,7 @@ include "config.php";
                                                         <div class="number" data-to="44">
                                                             0
                                                         </div>
-                                                        <h3 class="title">Proyectos</h3>
+                                                        <h3 class="title"><?php echo $lang['company']['item_group4_title2_text']; ?></h3>
                                                         <hr class="hr_narrow" />
                                                         <div class="desc">
                                                             
@@ -284,10 +279,10 @@ include "config.php";
                                                         <div class="number" data-to="6">
                                                             0
                                                         </div>
-                                                        <h3 class="title">Años de Experiencia</h3>
+                                                        <h3 class="title"><?php echo $lang['company']['item_group4_title3_text']; ?></h3>
                                                         <hr class="hr_narrow" />
                                                         <div class="desc">
-                                                            Desde 2013
+                                                            <?php echo $lang['company']['item_group4_desc3_text']; ?>
                                                         </div>
                                                     </div>
                                                 </div>
