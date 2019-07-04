@@ -42,6 +42,16 @@ include "config.php";
     <link rel='stylesheet' href='css/structure_alt.css'>
     <link rel='stylesheet' href='css/robotics_alt.css'>
     <link rel='stylesheet' href='css/custom_alt.css'>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138507054-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-138507054-1');
+	</script>
 
 </head>
 
