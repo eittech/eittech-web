@@ -20,7 +20,7 @@ include "config.php";
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Contacto</title>
+    <title><?php echo $lang['contact']['title']; ?></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -92,7 +92,7 @@ include "config.php";
                                             <div class="column_attr clearfix">
 
                                                 <hr class="no_line" style="margin:0 auto 150px">
-                                                <h2> Si está interesado en aprender más sobre <strong>eittech</strong>, o cree que una asociación podría ayudar a su empresa, ¡contactenos! Nos encantaría hablar.</h2>
+                                                <h2> <?php echo $lang['contact']['title_header']; ?></h2>
                                             </div>
                                         </div>
                                         <div class="column mcb-column one column_divider">
@@ -110,10 +110,7 @@ include "config.php";
                                             <div class="column_attr clearfix">
 												<h5>MCY</h5>
                                                 <p>
-                                                    Av Miranda Este,
-                                                    edificio Martins, Piso 1 oficina PA-01,
-                                                    <br> Maracay, estado Aragua, Venezuela
-                                                    <br>Intercomunicador 101*
+                                                    <?php echo $lang['contact']['subtitle_header']; ?>
                                                 </p>
                                             </div>
                                         </div>
