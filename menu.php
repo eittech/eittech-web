@@ -31,6 +31,13 @@ foreach($segment_url as $segment){
 	
 }
 
+// Si en este punto el nombre de la página está vacío, entonces es porque el cambio de idioma se hizo desde la raíz de la página (index)
+if($page_name == ""){
+	
+	$page_name = "index";
+	
+}
+
 ?>
 <ul id="menu-menu" class="menu menu-main">
 <?php foreach($lang['menu'] as $key_m => $menu){?>
