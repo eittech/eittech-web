@@ -20,7 +20,7 @@ include "config.php";
 
     <!-- Basic Page Needs -->
     <meta charset="utf-8">
-    <title>Portafolio</title>
+    <title><?php echo $lang['portfolio']['title']; ?></title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -88,10 +88,7 @@ include "config.php";
                                     <div class="mcb-wrap-inner">
                                         <div class="column mcb-column one column_column">
                                             <div class="column_attr clearfix animate" data-anim-type="fadeInLeft">
-                                                <h2>Combinamos lo mejor tanto de marketing como de TI  
-                                                    <br>para ayudar a nuestros clientes a enfrentar algunos de los
-                                                    <br> desafíos empresariales más difíciles.
-                                                </h2>
+                                                <h2><?php echo $lang['portfolio']['title_header']; ?></h2>
                                                 <hr class="no_line" style="margin:0 auto 150px">
                                                
                                             </div>
@@ -128,13 +125,13 @@ include "config.php";
                                             <a data-rel=".category-web" href="#">Web</a>
                                         </li>
                                         <li>
-                                            <a data-rel=".category-design" href="#">Diseño</a>
+                                            <a data-rel=".category-design" href="#"><?php echo $lang['portfolio']['filter1_text']; ?></a>
                                         </li>
 					<li>
                                             <a data-rel=".category-marketing" href="#">Marketing</a>
                                         </li>
 					<li class="reset">
-                                        	<a class="close" data-rel="*" href="portfolio-full-filtering.html"> Mostrar todas
+                                        	<a class="close" data-rel="*" href="portfolio-full-filtering.html"> <?php echo $lang['portfolio']['filter2_text']; ?>
                                     	</li>
                                     </ul>
                                 </div>
