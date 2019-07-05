@@ -26,7 +26,7 @@ $config['config']['menu']['maintenance']['active'] = 0;
 
 $config['config']['footer']['maintenance']['active'] = 1;
 
-$config['config']['maintenance']['active'] = 1;  // Activar/desactivar la página de mantenimiento
+$config['config']['maintenance']['active'] = 0;  // Activar/desactivar la página de mantenimiento
 
 
 // Aquí mismo hacemos la redirección a la página de mantenimiento si está activada y si no estamos ya en ella. Si se desactiva redirigimos al index.
